@@ -1,0 +1,158 @@
+*{margin: 0;padding: 0;}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+header, nav, section, main, article, aside, footer {
+    display: block;
+}
+@font-face {
+    font-family:"Open Sans"; /* Имя шрифта */
+    src: url(/public/fonts/opensansligth.ttf); /* Путь к файлу со шрифтом */
+}
+
+div {
+    font-family:'Open Sans' , arial;
+    font-weight: 300;
+}
+
+.clear{
+    clear: both;
+}
+
+/*******************************************************header*/
+#header{
+    width: 100%;
+}
+
+#headerTopLine{
+   background: #9786bd;
+    height: 5px;
+}
+#headerBody{
+    background: #fafafa;
+}
+#containerHeader, #content, #containerFooter{
+    margin: 0 auto;
+    max-width: 980px;
+}
+#logo{
+    float: left;
+    padding-top: 15px;
+    padding-bottom: 7px;
+    padding-left: 13px;
+    margin: 0 auto;
+    display: block;
+    height: 100%;
+}
+#contact{
+    padding-right: 13px;
+    padding-top: 26px;
+    padding-bottom: 25px;
+    text-align: right;
+    color: #6e6f72;
+    margin: 0 auto;
+    display: block;
+    height: 100%;
+}
+
+/*********************************************************content*/
+
+#bg {
+
+    background: #e7e7e7 url(/public/images/ob_bg.png) no-repeat center top;
+    overflow: hidden;
+    padding-top: 20px;
+    padding-bottom: 11px;
+}
+
+.portfolio a {
+    text-decoration: none;
+}
+.portfolio{
+    width: 234px;
+    height: 223px;
+    padding: 5px;
+    float: left;
+}
+.portfolio img {
+    width: 233px;
+    border: 1px solid #fafafa;
+}
+.portfolioText{
+    background: #fafafa ;
+    text-align: center;
+    height: 41px;
+    width: 234px;
+}
+.portfolio:hover .portfolioText, .portfolio:hover .portfolioType, .portfolio:hover .portfolioName {
+    background: #9786bd;
+    color: #fff;
+}
+.portfolioType{
+    color: #0a0a0a;
+    font-size: 71%;
+    font-weight: 600;
+    padding-top: 6px;
+    padding-bottom: 1px;
+}
+.portfolioName{
+    color: #606062;
+    font-size: 59%;
+    font-weight: 600;
+}
+/******************************************************footer*/
+
+#footer {
+    width: 100%;
+    background: #9786bd ;
+    color: #fff;
+    font: 80% serif;
+    padding-bottom: 6px;
+}
+
+#copy{
+    padding-top: 6px;
+    float: left;
+    margin-left: 20px;
+}
+#olgabro{
+    padding-top: 6px;
+    text-align: right;
+    margin-right: 30px;
+}
+/***************************************************************************kohana msg*/
+.error{
+    color: red;
+}
+.msgGood{
+    color: green;
+}
+/***************************************************************************kohana admin*/
+#adminMenu { /* Левая колонка */
+    float: left; /* Обтекание справа */
+    width: 15%; /* Ширина колонки */
+    font-size: 100%;
+}
+#adminMenu a {
+    color: #6e7073;
+    text-decoration: none;
+}
+#adminContent { /* Правая колонка */
+    margin-left: 16%; /* Отступ слева */
+}
+#addAdminMenu {
+    float: left; /* Обтекание справа */
+    width: 41%; /* Ширина колонки */
+    font-size: 100%;
+}
+#addAdminContent { /* Правая колонка */
+    margin-left: 42%; /* Отступ слева */
+}
+.portfolioAdmin{
+    color: #ff3300;
+    font-size: 80%;
+    font-weight: 600;
+}
